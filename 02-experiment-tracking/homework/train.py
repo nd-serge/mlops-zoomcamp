@@ -1,12 +1,11 @@
 import os
 import pickle
 import click
-
 import mlflow.sklearn
-from sklearn.ensemble import RandomForestRegressor
+import numpy as np
 from sklearn.metrics import root_mean_squared_error
+from sklearn.ensemble import RandomForestRegressor
 import mlflow
-
 
 def load_pickle(filename: str):
     with open(filename, "rb") as f_in:
@@ -14,9 +13,7 @@ def load_pickle(filename: str):
 
 mlflow.set_tracking_uri("sqlite:///mlflow.db")
 mlflow.set_experiment("homework-02-experiment-tracking")
-
 mlflow.autolog()
-
 
 @click.command()
 @click.option(
