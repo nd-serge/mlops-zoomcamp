@@ -1,0 +1,13 @@
+artifact_path: Dict Vectorizer
+flavors:
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+mlflow_version: 2.22.1
+model_size_bytes: 13007
+model_uuid: a974749cadc64765a91a4175753eb95b
+prompts: null
+run_id: 0ee7cd37489c4e299c4bb1d4b2b46439
+utc_time_created: '2025-06-08 20:31:55.576448'
